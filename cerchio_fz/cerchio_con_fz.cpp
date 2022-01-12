@@ -10,8 +10,7 @@ const float PGreco = 3.14;
 // Prototipi funzioni
 void calcola (float &, float &, float &);
 void stampa (float &, float &, float &);
-/*using namespace std; serve in C++ per accedere a cin e cout senza dovere 
-						utilizzare std::cin >>...; o std::cout <<...;*/
+/*using namespace std; serve in C++ per accedere a cin e cout senza dover utilizzare std::cin >>...; o std::cout <<...;*/
 using namespace std; 
 
 int main (void) {
