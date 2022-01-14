@@ -49,14 +49,14 @@ int main (void) {
 	scanf ("%c", &continuare);
     while (continuare =='S' || continuare =='s') {
         // LeggiRaggioDaArray
-		printf ("Dimensione ArrayRaggi: %i;\n", dim);
+		printf ("Dimensione ArrayDiRaggi: %i;\n", dim);
 	    for (int i = 0; i< dim; i++) {
-		printf ("ArrayRaggi[ %d] =%5.2f;\n", i, ArrayRaggi[i]);
+		printf ("ArrayDiRaggi[ %d] =%5.2f;\n", i, ArrayDiRaggi[i]);
 
         }
-        indice = rand() % dim;
-        printf ("indice rand: %i; ArrayRaggi[%i] = %5.2f\n", indice,indice,ArrayRaggi[indice]);
-        r = ArrayRaggi[indice];
+        int indice = rand() % dim;
+        printf ("indice rand: %i; ArrayDiRaggi[%i] = %5.2f\n", indice,indice,ArrayDiRaggi[indice]);
+        r = ArrayDiRaggi[indice];
 
 		// calcola
 			c = 2* PIG * r;
@@ -92,9 +92,7 @@ do { // chiediamo all'utente cio' che ci serve per i l'elaborazione
 			printf ("Il raggio vale: %5.2f;\n", r);
             printf ("La circonferenza vale: %5.2f;\n", c);
             printf ("L'area del cerchio vale: %5.2f;\n", a);
-		getchar();/*serve ad eliminare il simbolo di invio dal buffer
-					di lettura, residuo della lettura del raggio al passo
-					precedente. */
+
 		// chiediamo se vuole l'utente continuare
 		printf("Vuoi continuare? S/N: ");
 			scanf("%c", &continuare);

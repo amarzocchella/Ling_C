@@ -36,14 +36,14 @@ int main (void){
     while (continuare =='S' || continuare =='s') {
 
         // LeggiRaggioDaArray
-		printf ("Dimensione ArrayRaggi: %i;\n", dim);
+		printf ("Dimensione ArrayDiRaggi: %i;\n", dim);
 	    for (int i = 0; i< dim; i++) {
-		printf ("ArrayRaggi[ %d] =%5.2f;\n", i, ArrayRaggi[i]);
+		printf ("ArrayDiRaggi[ %d] =%5.2f;\n", i, ArrayDiRaggi[i]);
 
         }
-        indice = rand() % dim;
-        printf ("indice rand: %i; ArrayRaggi[%i] = %5.2f\n", indice,indice,ArrayRaggi[indice]);
-        r = ArrayRaggi[indice];
+        int indice = rand() % dim;
+        printf ("indice rand: %i; ArrayDiRaggi[%i] = %5.2f\n", indice,indice,ArrayDiRaggi[indice]);
+        r = ArrayDiRaggi[indice];
 
 		// calcola
 			c = 2* PIG * r;
