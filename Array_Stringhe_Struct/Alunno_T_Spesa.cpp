@@ -70,7 +70,7 @@ if (P!=0){
 		importo_totale=importo_totale+importo;
 	}
 
-	cout<<"l'importo totale e' di: "<<importo_totale<<"Euro"<<endl;
+	cout<<"l'importo totale e' di: "<<importo_totale<<" Euro"<<endl;
   } else cout<<"Nessun prodotto inserito ";
 
 
