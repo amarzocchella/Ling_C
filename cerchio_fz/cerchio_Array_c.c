@@ -46,8 +46,8 @@ int main (void){
         r = ArrayDiRaggi[indice];
 
 		// calcola
-			c = 2* PIG * r;
-            a = PIG * r * r;
+		c = 2* PIG * r;
+           	a = PIG * r * r;
 
        //  stampa
 
