@@ -98,7 +98,9 @@ do { // chiediamo all'utente cio' che ci serve per i l'elaborazione
 			scanf("%c", &continuare);
  } while((continuare =='S')||(continuare =='s'));
 
-}
+ return 0;
+}// fine main
+
 
 /*
 L'output generato durante il test del programma:
