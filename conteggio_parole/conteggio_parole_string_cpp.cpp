@@ -12,16 +12,8 @@ string minuscolo(string s)
 }
 
 void elabora_frase(string s1, int length){
-  printf("lunghezza s1: %d;  sizeof(s1) = %d;\n",length, sizeof(s1));
-//  int LunghezzaStringa = sizeof(s1);// mi darebbe un risultato errato!
-  int i = 0;
-  while (i<length ){
- //  printf("s1[ %d ] = %c ",i, s1[i]);
-    printf("%c ",s1[i]);
-  i++;
-   }
-  printf(";\n Lunghezza Parola: %d \n", length);
-}//fine stampa_word
+ 
+}//elabora_fras
 
 
 void stampa_word(char s1[]){
@@ -39,6 +31,7 @@ int main()
 	{	dim = sizeof(frasi[i]);
 		//elabora_frase(frasi[i],dim);
 		//stampa_word (frasi[i]);
+	/* Attenzione: la printf con %s funziona correttamente se frasi[i] e' un array di char */
 	//	printf("Frase letta: %s\n Lunghezza Parola: %d \n",frasi[i], dim);
 		cout<<frasi[i]<< endl;
 		i++;
