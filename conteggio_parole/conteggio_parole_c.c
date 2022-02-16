@@ -34,12 +34,6 @@ Ciao, come va con la programmazione, e' dura, vero?
 char phrase [ ph_size ] ;
 
 void stampa_word(char s1[]){
-  printf("%d \n",sizeof(s1));
-  int LunghezzaStringa = sizeof(s1);
-  int i = 0;
-  while (i<LunghezzaStringa ){
-   printf("s1[ %d ] = %c ",i, s1[i]);
-   i++;
    }
   printf("; Lunghezza Parola: %d \n", LunghezzaStringa);
 }//fine stampa_word
@@ -51,8 +45,7 @@ int main() {
  
  printf ("Inserire una frase e premere invio.\n es.: Ciao, come va con la programmazione, e' dura, vero?\n");
   do {
-	//	while (c=getchar()){ printf ("carattere immesso: %c\n", c);
-		while ((c=getchar())&&(c!='\0')){ printf ("carattere immesso: %c\n", c);
+		while (c=getchar()){ printf ("carattere immesso: %c\n", c);
 		if ( 'a'<=c && c<='z' || 'A'<=c && c <='Z' ) {
 //		if ( (('a'<=c) && (c<='z')) || (('A'<=c) && (c <='Z')) ) {
 			if ( i<ph_size-1 && i<wsize-1 ){
@@ -60,8 +53,6 @@ int main() {
 				phrase [ i++ ] = c ;}
 		} else
 			if ( i ) {
-					//	parola [ i++ ] = '\0';// No! stiamo lavorando con un array di caratteri. Vedi dispensina vedi dispensina Lezione9_C_array_di_caratteri
-					//	printf ( "trovato parola: %s ; Num char: %d;\n", parola, i) ;//no con %s, stiamo lavorando con un array di caratteri. 
 					stampa_word(parola);
 						phrase [ i++ ] = c ;
 						cont+=i;
