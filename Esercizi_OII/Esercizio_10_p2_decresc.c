@@ -1,7 +1,7 @@
 // cosa stampa questo programma? punti 2
 #include <stdio.h>
-#define N 10
-int v[N] = {3, 5, 2, 7, 8, 1, 4, 9, 6, 0};
+#define N 4
+int v[N] = {9, 4, 3, 0};
 void p () {
     int i,t,s;
     do {
@@ -24,6 +24,6 @@ main() {
 }
 
 /* output
- * v[N] = {3, 5, 2, 7, 8, 1, 4, 9, 6, 0};
- * 1 2 3 4 5 6 7 8 9 0
+ * v[N] = {9, 4, 3, 0};
+ * 3 4 9 0
  * */
