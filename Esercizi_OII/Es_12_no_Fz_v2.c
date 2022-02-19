@@ -12,7 +12,7 @@ int vett[N];
 main() {
 	int i;
     for (i=0;i<N;i++)
-        vett[i]=i+3;
+        vett[i]=i+4;
     i=0;    
     while (i<N){
         vett[i] = vett[vett[i] % (N-i)];
