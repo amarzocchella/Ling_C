@@ -1,4 +1,6 @@
-/* putchar_getchar.c
+/*  vedi: https://www.codingcreativo.it/funzioni-getchar-e-putchar/
+
+putchar_getchar.c
  * comandi da console
 ls
 cd ConteggioParole
