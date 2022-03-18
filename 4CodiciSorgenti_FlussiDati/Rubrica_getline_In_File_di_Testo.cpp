@@ -158,14 +158,15 @@ void Ricerca()
 	cout << "Inserisci il nome da cercare: ";
 	//cin >> cercato;
     getline (cin,cercato);
+    cout<<"cercato ="<<cercato<<"  lunghezza ="<<cercato.length()<<endl;
 	archivio.open(NOMEARCH.c_str(), ios::in); // apre il file in lettura
 	if (!archivio) {
 		cout << "Errore nell'apertura del file" << endl;
 	} else {
 //		archivio >> nome; // legge dal file
+		getline (archivio, stLine);
 		while (!archivio.eof() && !trovato) {
 		//	archivio >> telefono;
-			getline (archivio, stLine);
 		//	if (nome == cercato) {
 		//	if (strcasecmp(stLine.c_str(), cercato.c_str()) == 0) {// le due stringhedevono essere uguali.
 			if (strncasecmp(stLine.c_str(), cercato.c_str(), cercato.length()) == 0) {// ecco come fare a confrontare solo fino a prima che inizi il telefono 
@@ -174,6 +175,7 @@ void Ricerca()
 				trovato = true;
 			}
 	//		archivio >> nome;
+			cout<<"Sono in Ricerca! e stLine ="<<stLine<<endl;
 			getline (archivio, stLine);
 		}
 		archivio.close(); // chiude il file
