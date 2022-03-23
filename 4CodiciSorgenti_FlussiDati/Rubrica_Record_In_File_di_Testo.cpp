@@ -2,7 +2,7 @@
 // inserimento, aggiunta, visualizzazione,
 // stampa e ricerca
 /*
-Il programma salva i record in un file di testo di nome "rubrica.dat" 
+Il programma salva i record in un file di testo di nome "rubrica_record.dat" 
 inserendo i valori degli attributi in un'unica riga 
 separati dal carattere speciale #.
 Il formato delle line di testo è il seguente:
