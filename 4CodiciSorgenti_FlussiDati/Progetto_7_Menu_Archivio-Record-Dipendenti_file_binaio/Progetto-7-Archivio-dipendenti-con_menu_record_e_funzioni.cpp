@@ -1,14 +1,10 @@
 /*   
- * "programma spesa Justin", 
-  sviluppato con Record e funzioni e menu.
-
- * Per ogni prodotto memorizza:
+ * "programma dipendenti ", 
+  sviluppato con Record e funzioni e menu
+ * a scopo didattico.
+ * Per ogni dipendente memorizza:
  *  
- * DescrizioneProdotto, Prezzo, Quantità, AliquotaIVA
- * 
- * Alla fine, per ogni prodotto stampa:
- * 
- * DescrizioneProdotto, Prezzo, Quantità, AliquotaIVA, Importo (cioè prezzo + IVA)
+ *  ID, nome, stipendio
  *
  */ 
 #include <iostream>
