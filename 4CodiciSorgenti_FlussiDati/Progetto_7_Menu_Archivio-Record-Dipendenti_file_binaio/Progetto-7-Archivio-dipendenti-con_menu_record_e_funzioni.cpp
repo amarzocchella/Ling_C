@@ -23,7 +23,7 @@ const string NOMEARCH = "anagrafe.dat";
 
 
 struct Persona {
-	int ID; // matricola
+	int ID; // identificativo intero va bene int se non inizia con zero altrimenti occorre array di char.
 	char nome[50]; // cognome e nome
 	double stipendio; // stipendio
 };
