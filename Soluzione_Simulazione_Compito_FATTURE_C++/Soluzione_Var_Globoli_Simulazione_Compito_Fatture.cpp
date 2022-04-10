@@ -115,7 +115,7 @@ int Leggi_Dati()
 
 int Stampa_Report()
 {
-// visualizza i dipendenti registrati
+// visualizza i record registrati
 	ifstream fin;
 	fin.open(NOMEARCH.c_str(), ios::in | ios::binary);
 	if (!fin) {
